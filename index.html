@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <h1>
+                Rock and Roll
+            </h1>
+            <nav class="navegacion-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class=" contenedor contenido-video">
+                <h2>
+                    Rock and Roll Festival
+                </h2>
+                <p>
+                    Hermosillo, Mexico, 2023.
+                </p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+    </div>
+    <section class=" contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+
+                <img loading="lazy" src="src/img/imagen_vocalista.jpg" alt="Imagen vocalista Festival">
+            </picture>
+            <picture>
+                <source srcset=".avif" type="image/avif">
+                <source srcset=".webp" type="image/webp">
+            <img loading="lazy" src="" alt="">
+            </picture>
+        </div>
+        <div class="contenido-festival">
+            <h2>Rock & EDM Festival</h2>
+            <p class="fecha">Julio 2023, Hermosillo, Sonora</p>
+            <p>
+                Aqui iria un texto si se me ocurriera uno pero 
+                no importa porque es un texto de prueba, si importara
+                pondria un texto relacionado a la pagina, pero esta pagina
+                es una prueba y no se vasa en algo real, es por eso que
+                decido usar este texto de prueba para todos lados de la interfaz.
+            </p>
+        </div>
+    </section>
+    <section id="lineup" class="lineup">
+        <h3>LineUp</h3>
+        <p class="dia">Viernes 21</p>
+
+        <div class="escenarios-contenedores contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombr-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombr-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li><span>12:00am </span>Cantantes</li>
+                    <li><span>12:00am </span>Cantantes</li>
+                    <li><span>12:00am </span>Cantantes</li>
+                    <li><span>12:00am </span>Cantantes</li>
+                    <li><span>12:00am </span>Cantantes</li>
+                </ul>
+            </div>
+        </div><!--Primercontenedor-->
+        <p class="dia">Sabado 22</p>
+
+        <div class="escenarios-contenedores contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombr-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombr-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                    <li><span>10:00pm </span>Cantantes</li>
+                </ul>
+            </div>
+        </div><!--Segundocontenedor-->
+    </section>
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galeria</h3>
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p>Pase 1 Dia</p>
+                <header class="pase-header"><p>Incluye</p></header>
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            Comida y bebidas
+                        </li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$100.00</p>
+                </footer>
+            </div>
+            <div class="premium">
+                <p>Pase 2 Dias</p>
+                <header class="pase-header"><p>Incluye</p></header>
+                <div class="pase-body">
+                    <ul>
+                        <li>
+                            Acceso a ambos escenarios
+                        </li>
+                        <li>
+                            Comida y bebidas
+                        </li>
+                        <li>
+                            Camisa
+                        </li>
+                        <li>
+                            Acceso VIP
+                        </li>
+                    </ul>
+                </div>
+                <footer class="pase-footer">
+                    <p>$200.00</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock And Roll Festival. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/build/js/app.js"></script>
+</body>
+</html>
